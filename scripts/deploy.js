@@ -15,7 +15,7 @@ async function main() {
 
   // We get the contract to deploy
   const Huntress = await hre.ethers.getContractFactory("Huntress");
-  const contract = await Huntress.deploy("Hello, Hardhat!");
+  const contract = await Huntress.deploy();
 
   await contract.deployed();
 
